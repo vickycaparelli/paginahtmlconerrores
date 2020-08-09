@@ -136,4 +136,60 @@
       </div>
       <footer id="footer">
       </footer>
+      
+      <!--SCRIPTS-->
+        <!--Scrolling between elements of the page-->
+        <script type = "text/javascript">
+          $('.ancla').on('click', function(e){
+            e.preventDefault();
+            var strAncla = '#' + $(this).data('ancla');
+            $('html,body').stop(true,true).animate({scrollTop: $(strAncla).offset().top}, 2000);
+          });
+        </script>
+        <!--Create bars and resize navbar-->
+        <script type = "text/javascript">
+            $(document).ready(function() {
+              checkSize();
+
+              $("#myBarHTML").css({'background-color':'#49599a','width':'60%'});
+              $("#myBarPython").css({'background-color':'#002984','width':'25%'});
+              $("#myBarJava").css({'background-color':'#001970','width':'20%'});
+              $("#myBarSQL").css({'background-color':'#000039','width':'20%'});
+              $("#myBarBoot").css({'background-color':'#00675b','width':'60%'});
+              $("#myBarGit").css({'background-color':'#004c40','width':'70%'});
+              $("#myBarJQuery").css({'background-color':'#00251a','width':'30%'});
+              $("#myBarPs").css({'background-color':'#00acc1','width':'50%'})
+              $(window).resize(checkSize);
+            });
+
+            function checkSize(){
+                if ($("#navcontainer").css("display") == "inline-block" ){
+                    $("#projIcon").text("");
+                    $("#skillsIcon").text("");
+                    $("#resumeIcon").text("");
+                }else{
+                    $("#projIcon").text(" Projects");
+                    $("#skillsIcon").text(" Skills");
+                    $("#resumeIcon").text(" Resume");
+                }
+
+                if ($(window).width()>750){
+                  $(".navbar-header").show();
+                  $(".navbar-nav").show();
+                }
+            }
+
+            $("#toogleCon").on('click touchstart',function(){
+                if($(".navbar-header").is(':visible') ){
+                    $(".navbar-header").hide();
+                    $(".navbar-nav").hide();
+                }else{
+                    $(".navbar-header").show();
+                    $(".navbar-nav").show();
+                }
+
+            });
+        </script>
+
+  </body>
 </html>

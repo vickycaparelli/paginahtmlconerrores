@@ -1,0 +1,160 @@
+html,body{
+  height: 100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+p{
+  font-family: 'Roboto Mono', monospace;
+  color: #fafafa;
+  font-size: large;
+  text-align: left;
+}
+
+.thumb-text{
+  font-family: 'Roboto Mono', monospace;
+  color: #000000;
+  font-size: medium;
+  text-align: left;
+}
+
+.skills-titles{
+  color:#000000;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.proj-titles{
+  color: #fafafa;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+#top-bar{
+  padding-top: 6%;
+  padding-bottom: 2%;
+  text-align:center;
+  background: #eceff1 !important;
+}
+#projects{
+  width:100%;
+  color:#fafafa;
+  margin:0;
+  background-color:#263238;
+  padding:3%;
+}
+
+.headshot{
+  width: 13%;
+  height: 13%;
+}
+.title{
+  color:#000000;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+  width:100%;
+}
+#social-bar{
+  display: block;
+  text-align: center;
+  padding: 2%;
+  background: #000a12;
+}
+#btn-group{
+  width:85%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+#skills{
+  padding-top: 3%;
+  padding-bottom: 4%;
+  text-align: center;
+  background: #eceff1 !important;
+}
+#main{
+  width:100%;
+  margin:0;
+  background-color:#263238;
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-left:10%;
+  padding-right:6%;
+}
+#footer{
+  /*clear:both;*/
+  /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000a12;
+}
+
+#myTopnav{
+  position:fixed;
+  height:auto;
+  top:0;
+  width: 100%;
+  z-index: 9;
+}
+.menu{
+  font-weight: 800;
+  font-family: 'Roboto Slab', serif;
+  background: #000a12;
+  color:#fff7ff !important;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color:#ff7043 !important;
+  }
+
+.myProgress {
+  width: 50%;
+  border-radius: 3px;
+  background-color: #ddd;
+  margin-left: 25%;
+  margin-bottom: 2%;
+
+}
+
+.myBar {
+  width: 60%;
+  font-weight: 500;
+  height: 35px;
+  border-radius: 3px;
+  text-align:center;
+  font-family: 'Roboto Mono', monospace;
+  color:white;
+}
+
+#toogleCon{
+  visibility:hidden;
+}
+
+.thum-pers{
+  height: 500px;
+}
+
+@media all and (max-width: 750px){
+    #navcontainer{
+        display: inline-block;
+        float:none;
+    }
+    #toogleCon{
+      visibility:visible;
+    }
+
+    .myProgress {
+      width: 70%;
+      margin-left:15%;
+    }
+}
+
+@media all and (max-width: 350px){
+    .myProgress {
+      width: 100%;
+      margin-left:0%;
+    }
+   p{
+     font-size: medium;
+   }
+
+}

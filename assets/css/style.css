@@ -5,12 +5,20 @@ html,body{
   padding:0;
 }
 
-p{
+.text-p{
   font-family: 'Roboto Mono', monospace;
   color: #fafafa;
   font-size: large;
   text-align: left;
 }
+
+.text-p-black{
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  font-size: medium;
+  text-align: left;
+}
+
 
 .thumb-text{
   font-family: 'Roboto Mono', monospace;
